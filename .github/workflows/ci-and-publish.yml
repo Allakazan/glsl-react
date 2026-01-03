@@ -50,6 +50,12 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org
+          always-auth: false
+
+      - name: Ensure clean npm auth
+        run: |
+          rm -f ~/.npmrc
+          npm config delete //registry.npmjs.org/:_authToken || true
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
@@ -60,7 +66,7 @@ jobs:
       - name: Ensure clean npm auth
         run: rm -f ~/.npmrc
 
-      - name: Publish to npm (Trusted Publishing)
-        run: |
-          npm config delete //registry.npmjs.org/:_authToken
-          npm publish --provenance
+      - name: Publish via Trusted Publishing
+        env:
+          NODE_AUTH_TOKEN: ""   # FORÇA OIDC
+        run: npm publish --provenance

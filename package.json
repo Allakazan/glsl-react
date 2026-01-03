@@ -4,7 +4,7 @@
   "description": "A React library for rendering WebGL shaders with a simple, declarative API",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Allakazan/glsl-react"
+    "url": "git+https://github.com/Allakazan/glsl-react.git"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",

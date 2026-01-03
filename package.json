@@ -1,0 +1,61 @@
+{
+  "name": "glsl-react",
+  "version": "0.1.0",
+  "description": "A React library for rendering WebGL shaders with a simple, declarative API",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Allakazan/glsl-react"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "jest --verbose --silent=false --noStackTrace --useStderr"
+  },
+  "keywords": [
+    "react",
+    "webgl",
+    "glsl",
+    "shader",
+    "canvas",
+    "graphics",
+    "fragment-shader"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "jest": "^30.2.0",
+    "jest-canvas-mock": "^2.5.2",
+    "jest-environment-jsdom": "^30.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-jest": "^29.4.6",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {}
+}

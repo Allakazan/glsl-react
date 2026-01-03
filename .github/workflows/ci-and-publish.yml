@@ -57,5 +57,10 @@ jobs:
       - name: Build package
         run: yarn build
 
+      - name: Ensure clean npm auth
+        run: rm -f ~/.npmrc
+
       - name: Publish to npm (Trusted Publishing)
-        run: npm publish --provenance
+        run: |
+          npm config delete //registry.npmjs.org/:_authToken
+          npm publish --provenance

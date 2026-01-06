@@ -1,6 +1,6 @@
 {
   "name": "glsl-react",
-  "version": "0.1.6",
+  "version": "0.1.1",
   "description": "A React library for rendering WebGL shaders with a simple, declarative API",
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "test": "jest --verbose --silent=false --noStackTrace --useStderr"
+    "test": "jest --verbose --silent=false --noStackTrace --useStderr",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [
     "react",

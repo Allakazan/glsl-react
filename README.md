@@ -397,6 +397,6 @@ Contributions are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for g
 
 ## Support
 
-- 🐛 [Report bugs](https://github.com/yourusername/glsl-react/issues)
-- 💡 [Request features](https://github.com/yourusername/glsl-react/issues)
-- 📖 [Documentation](https://github.com/yourusername/glsl-react)
+- 🐛 [Report bugs](https://github.com/Allakazan/glsl-react/issues)
+- 💡 [Request features](https://github.com/Allakazan/glsl-react/issues)
+- 📖 [Documentation](https://github.com/Allakazan/glsl-react) (WIP)

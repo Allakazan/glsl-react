@@ -1,5 +1,10 @@
 # glsl-react
 
+![NPM Version](https://img.shields.io/npm/v/glsl-react?style=flat-square&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fglsl-react&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fglsl-react) 
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/glsl-react?style=flat-square&label=size)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Allakazan/glsl-react/.github%2Fworkflows%2Fpublish.yml?style=flat-square&logo=github)
+![GitHub deployments](https://img.shields.io/github/deployments/Allakazan/glsl-react/npm?style=flat-square&label=deploy&logo=github&logoColor=%23fff)
+
 A React library for rendering WebGL shaders with a simple, declarative API. Write GLSL fragment shaders and render them as React components with minimal setup. It has no dependencies.
 
 ## Features
